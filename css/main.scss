@@ -55,19 +55,20 @@ section {
     p:nth-child(3) {
       font-size: 2.5rem;
       .txtChanger > .txt {
-        border-right: 0.2rem solid rgba(255, 255, 255, 0.7);
-        animation: blink 800ms steps(40) infinite normal;
+        border-right: 0.2rem solid rgba(255, 255, 255, 0.6);
+        animation: blink 1s step-end infinite;
       }
     }
   }
 }
 
 @keyframes blink {
-  0% {
-    border-right-color: rgba(255, 255, 255, 0.7);
+  from,
+  to {
+    border-color: rgba(255, 255, 255, 0.6);
   }
-  100% {
-    border-right-color: transparent;
+  50% {
+    border-color: transparent;
   }
 }
 
